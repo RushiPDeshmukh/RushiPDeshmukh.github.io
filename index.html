@@ -600,61 +600,62 @@
           <ul class="blog-posts-list">
 
             <li class="project-item  active" data-filter-item data-category="motion planning">
-              <a href="https://github.com/RushiPDeshmukh/Centralized_Motion_Planner_Project">
-
+                <div data-project-item>
+                <!-- <a href="https://github.com/RushiPDeshmukh/Centralized_Motion_Planner_Project" target="_blank"></a> -->
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/centralized_motion_planner.gif" alt="Centralized Motion Planner for Autonomous Vehicles in a City Grid" loading="lazy">
+                  <img src="./assets/images/centralized_motion_planner.gif" alt="Centralized Motion Planner for Autonomous Vehicles in a City Grid" loading="lazy" project-img>
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Motion Planning</p>
+                    <p class="blog-category" project-category>Motion Planning</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-05">May, 2022</time>
+                    <time datetime="2022-05" project-date>May, 2022</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Centralized Motion Planner for Autonomous Vehicles</h3>
-
-                  <p class="blog-text">
+                  <h3 class="h3 blog-item-title" project-title>Centralized Motion Planner for Autonomous Vehicles
+                    <!-- <a href="https://github.com/RushiPDeshmukh/Centralized_Motion_Planner_Project" target="_blank">Centralized Motion Planner for Autonomous Vehicles</a> -->
+                  </h3>
+                  <p class="blog-text" project-description>
                     Designed and deployed a centralized motion planning system for autonomous vehicles (AVs) using algorithms such as A* variants and D* lite. This motion planner was implemented on a simulation environment built using ROS (Robotic Operating System) and Pygame. The system also includes a time-priority-based conflict resolution strategy that allows for efficient navigation and safe operation of multiple AVs in a coordinated manner.
                   </p>
                  
 
                 </div>
                 
-              </a>
+              <!-- </a> -->
+              </div>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="motion planning">
-              <a href="https://github.com/RushiPDeshmukh/BoundingVolumeHierarchyBasedCollisionDetection">
-
+              <div data-project-item>
+                <!-- <a href="https://github.com/RushiPDeshmukh/BoundingVolumeHierarchyBasedCollisionDetection"></a> -->
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/bvt.gif" alt="Interactive 2D Collision Detection based on BVTT" loading="lazy">
+                  <img src="./assets/images/bvt.gif" alt="Interactive 2D Collision Detection based on BVTT" loading="lazy" project-img>
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Motion Planning</p>
+                    <p class="blog-category" project-category>Motion Planning</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-10">Oct, 2022</time>
+                    <time datetime="2022-10" project-date>Oct, 2022</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Interactive 2D Collision Detection based on BVTT</h3>
+                  <h3 class="h3 blog-item-title" project-title>Interactive 2D Collision Detection based on BVTT</h3>
 
-                  <p class="blog-text">
+                  <p class="blog-text" project-description>
                     Developed a real-time collision detection algorithm using a Bounding Volume Hierarchical (BVH) model. Improved the algorithm's performance by implementing 3 levels of object detail approximation in BVHs. Achieved a collision detection response time of 3-4 ms in worst-case scenarios and 1-2 microseconds in the best case.
                   </p>
                  
 
                 </div>
-                
-              </a>
+              </div>
             </li>
             <li class="project-item  active" data-filter-item data-category="reinforcement learning">
               <a href="https://github.com/RushiPDeshmukh/PPO_DQN_CarRacing">
@@ -773,13 +774,43 @@
           </ul>
 
         </section>
+        <div class="project-container" project-modal-container>
+          <div class="project-overlay" project-data-overlay> </div>
+          <section class="projects-modal">
+            <!-- Change to reflect the true content you want for the project overlay -->
+            <button class="project-close-btn" project-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
 
+            <div class="project-img-wrapper">
+              <figure class="blog-banner-box">
+                <img src="./assets/images/centralized_motion_planner.gif" alt="Centralized Motion Planner for Autonomous Vehicles in a City Grid" loading="lazy" project-modal-img>
+              </figure>
+            </div>
+
+            <div class="blog-content">
+
+              <h4 class="h3 blog-title" project-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14" project-modal-date>14 June, 2021</time>
+
+              <div>
+                <p project-modal-description>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+          </section>
+        </div>
       </article>
 
-      <!-- <!--
-        - #BLOG
-      -->
-
+      <!-- 
+      BLOGSSSSS
       <article class="blog" data-page="blog">
 
         <header>

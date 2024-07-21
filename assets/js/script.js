@@ -5,8 +5,6 @@
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
-
-
 // sidebar variables
 const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
@@ -22,10 +20,27 @@ const modalContainer = document.querySelector("[data-modal-container]");
 const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
 const overlay = document.querySelector("[data-overlay]");
 
+
 // modal variable
 const modalImg = document.querySelector("[data-modal-img]");
 const modalTitle = document.querySelector("[data-modal-title]");
 const modalText = document.querySelector("[data-modal-text]");
+
+// projects variables
+const projectItems = document.querySelectorAll("[data-project-item]");
+const projectContainer = document.querySelector("[project-modal-container]");
+const projectCloseBtn = document.querySelector("[project-modal-close-btn]");
+const projectOverlay = document.querySelector("[project-data-overlay]");
+
+// project modal variable
+const projectImg = document.querySelector("[project-modal-img]");
+const projectCategory = document.querySelector("[project-modal-category]");
+const projectTitle = document.querySelector("[project-modal-title]");
+const projectDate = document.querySelector("[project-modal-date]");
+const projectDescription = document.querySelector("[project-modal-description]");
+console.log(projectImg)
+
+
 
 // modal toggle function
 const testimonialsModalFunc = function () {
@@ -53,6 +68,32 @@ for (let i = 0; i < testimonialsItem.length; i++) {
 modalCloseBtn.addEventListener("click", testimonialsModalFunc);
 overlay.addEventListener("click", testimonialsModalFunc);
 
+
+// modal toggle function
+const projectsModalFunc = function () {
+  projectContainer.classList.toggle("active");
+  projectOverlay.classList.toggle("active");
+}
+
+// add click event to all modal items
+for (let i = 0; i < projectItems.length; i++) {
+
+  projectItems[i].addEventListener("click", function () {
+
+    projectImg.src = this.querySelector("[project-img]").src;
+    projectImg.alt = this.querySelector("[project-img]").alt;
+    projectTitle.innerHTML = this.querySelector("[project-title]").innerHTML;
+    projectDescription.innerHTML = this.querySelector("[project-description]").innerHTML;
+    projectDate.innerHTML = this.querySelector("[project-date]").innerHTML;
+    projectsModalFunc();
+
+  });
+
+}
+
+// add click event to modal close button
+projectCloseBtn.addEventListener("click", projectsModalFunc);
+projectOverlay.addEventListener("click", projectsModalFunc);
 
 
 // custom select variables
