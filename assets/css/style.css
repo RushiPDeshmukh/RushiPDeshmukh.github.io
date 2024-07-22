@@ -1118,6 +1118,14 @@ main {
  * #project-modal
  */
 
+ .modal-only{
+  visibility: hidden;
+ }
+
+ .modal-only.active{
+  visibility: visible;
+ }
+
  .project-container {
   position: fixed;
   top: 5%;

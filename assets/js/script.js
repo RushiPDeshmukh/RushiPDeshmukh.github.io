@@ -38,7 +38,10 @@ const projectCategory = document.querySelector("[project-modal-category]");
 const projectTitle = document.querySelector("[project-modal-title]");
 const projectDate = document.querySelector("[project-modal-date]");
 const projectDescription = document.querySelector("[project-modal-description]");
-console.log(projectImg)
+const projectKeywords = document.querySelector("[project-modal-keywords]");
+const projectGithubLink = document.querySelector("[project-modal-github-link]");
+const projectResultDescription = document.querySelector("[project-modal-result-description]");
+const projectResultVideos = document.querySelector("[project-modal-result-videos]");
 
 
 
@@ -85,6 +88,10 @@ for (let i = 0; i < projectItems.length; i++) {
     projectTitle.innerHTML = this.querySelector("[project-title]").innerHTML;
     projectDescription.innerHTML = this.querySelector("[project-description]").innerHTML;
     projectDate.innerHTML = this.querySelector("[project-date]").innerHTML;
+    projectGithubLink.innerHTML = this.querySelector("[project-github-link]").innerHTML;
+    projectKeywords.innerHTML = this.querySelector("[project-keywords]").innerHTML;
+    projectResultDescription.innerHTML = this.querySelector("[project-result-description]").innerHTML;
+    projectResultVideos.innerHTML = this.querySelector("[project-result-videos]").innerHTML;
     projectsModalFunc();
 
   });
