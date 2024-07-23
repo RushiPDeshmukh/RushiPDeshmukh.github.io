@@ -77,15 +77,24 @@
   --ff-poppins: 'Poppins', sans-serif;
 
   /* font-size */
-  --fs-1: 24px;
-  --fs-2: 18px;
-  --fs-3: 17px;
-  --fs-4: 16px;
+  --fs-1: 24px; 
+  --fs-2: 18px; 
+  --fs-3: 17px; 
+  --fs-4: 16px; 
   --fs-5: 15px;
   --fs-6: 14px;
   --fs-7: 13px;
   --fs-8: 11px;
 
+/* New font-size  Above given are over-written */
+  --fs-24:24px;
+  --fs-20:20px;
+  --fs-18:18px;
+  --fs-17:17px;
+  --fs-16:16px;
+  --fs-15:15px;
+  
+  
   /* font-weight */
   --fw-300: 300;
   --fw-400: 400;
@@ -1226,6 +1235,8 @@ main {
   overflow: hidden;
   padding-left:5px;
   padding-right:5px;
+  padding-bottom: 10px;
+  padding-top:10px;
 }
 .project-img-modal > img{
   width: 100%;
@@ -1249,14 +1260,13 @@ main {
   justify-content: flex-start;
   align-items: center;
   gap: 7px;
-  margin-bottom: 10px;
   padding-left:5px;
   padding-right:5px;
 }
 
 .project-modal-meta :is(.blog-category, time) {
-  color: var(--light-gray-70);
-  font-size: var(--fs-6);
+  color: var(--orange-yellow-crayola);
+  font-size: var(--fs-15);
   font-weight: var(--fw-300);
 }
 
@@ -1278,13 +1288,6 @@ main {
   margin-bottom: 10px;
 }
 
-.project-text {
-  color: var(--light-gray);
-  font-size: var(--fs-6);
-  font-weight: var(--fw-300);
-  line-height: 1.6;
-}
-
 .project-content p {
   color: var(--light-gray);
   font-size: var(--fs-6);
@@ -1292,6 +1295,65 @@ main {
   line-height: 1.6;
 }
 
+.project-modal-content .project-result-description .blog-text{
+  color: var(--light-gray);
+  font-size: var(--fs-16);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+}
+
+.project-keywords {
+  color: var(--orange-yellow-crayola);
+  font-size: var(--fs-15);
+  font-weight: var(--fw-300);
+  display: inline;
+  padding-left: 5px;
+}
+
+.project-text{
+  color: var(--white-2);
+  font-size: var(--fs-18);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+
+.project-link{
+  padding: 15px;
+}
+
+.ion-icon{
+  height: 40px;
+  color: white;
+  contain: none;
+}
+
+.modal-section-title{
+  color:var(--orange-yellow-crayola);
+  font-size: var(--fs-18);
+  font-weight: var(--fw-400);
+  padding-top:7px;
+}
+
+.project-result-videos {
+  width: 50vw;
+  padding-top: 5px;
+}
+
+.project-result-videos video{
+  width: 30vw;
+}
+
+.project-result-description{
+  color:var(--white-2);
+  font-size: var(--fs-18);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  text-align: justify;
+  text-justify: inter-word;
+}
 
 /*-----------------------------------*\
   #CONTACT
