@@ -1338,8 +1338,10 @@ main {
 }
 
 .project-result-videos {
-  width: 50vw;
+  width: 20px;
+  height:5px;
   padding-top: 5px;
+  overflow: hidden;
 }
 
 .project-result-videos video{
