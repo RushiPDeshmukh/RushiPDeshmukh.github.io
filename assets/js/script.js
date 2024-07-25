@@ -26,25 +26,6 @@ const modalImg = document.querySelector("[data-modal-img]");
 const modalTitle = document.querySelector("[data-modal-title]");
 const modalText = document.querySelector("[data-modal-text]");
 
-// projects variables
-const projectItems = document.querySelectorAll("[data-project-item]");
-const projectContainer = document.querySelector("[project-modal-container]");
-const projectCloseBtn = document.querySelector("[project-modal-close-btn]");
-const projectOverlay = document.querySelector("[project-data-overlay]");
-
-// project modal variable
-const projectImg = document.querySelector("[project-modal-img]");
-const projectCategory = document.querySelector("[project-modal-category]");
-const projectTitle = document.querySelector("[project-modal-title]");
-const projectDate = document.querySelector("[project-modal-date]");
-const projectDescription = document.querySelector("[project-modal-description]");
-const projectKeywords = document.querySelector("[project-modal-keywords]");
-const projectGithubLink = document.querySelector("[project-modal-github-link]");
-const projectResultDescription = document.querySelector("[project-modal-result-description]");
-const projectResultVideos = document.querySelector("[project-modal-result-videos]");
-
-
-
 // modal toggle function
 const testimonialsModalFunc = function () {
   modalContainer.classList.toggle("active");
@@ -72,6 +53,28 @@ modalCloseBtn.addEventListener("click", testimonialsModalFunc);
 overlay.addEventListener("click", testimonialsModalFunc);
 
 
+// PROJECT ===========================================================================================
+// projects variables
+const projectItems = document.querySelectorAll("[data-project-item]");
+const projectContainer = document.querySelector("[project-modal-container]");
+const projectCloseBtn = document.querySelector("[project-modal-close-btn]");
+const projectOverlay = document.querySelector("[project-data-overlay]");
+
+// project modal variable
+const projectImg = document.querySelector("[project-modal-img]");
+const projectCategory = document.querySelector("[project-modal-category]");
+const projectTitle = document.querySelector("[project-modal-title]");
+const projectDate = document.querySelector("[project-modal-date]");
+const projectDescription = document.querySelector("[project-modal-description]");
+const projectKeywords = document.querySelector("[project-modal-keywords]");
+
+const projectGithubLink = document.getElementById('github-link');
+
+const projectResultDescription = document.querySelector("[project-modal-result-description]");
+const projectResultVideos = document.getElementById("project-modal-result-video-1");
+const projectVideos = document.querySelector("[project-modal-videos]");
+
+
 // modal toggle function
 const projectsModalFunc = function () {
   projectContainer.classList.toggle("active");
@@ -88,10 +91,11 @@ for (let i = 0; i < projectItems.length; i++) {
     projectTitle.innerHTML = this.querySelector("[project-title]").innerHTML;
     projectDescription.innerHTML = this.querySelector("[project-description]").innerHTML;
     projectDate.innerHTML = this.querySelector("[project-date]").innerHTML;
-    projectGithubLink.innerHTML = this.querySelector("[project-github-link]").innerHTML;
     projectKeywords.innerHTML = this.querySelector("[project-keywords]").innerHTML;
     projectResultDescription.innerHTML = this.querySelector("[project-result-description]").innerHTML;
-    projectResultVideos.innerHTML = this.querySelector("[project-result-videos]").innerHTML;
+    projectVideos.innerHTML = this.querySelector("[videos]").innerHTML;
+    openGithubLink(this.querySelector("[project-github-link]").textContent);
+    makeImgSrc(this.querySelector("[project-result-videos]").textContent);
     projectsModalFunc();
 
   });
@@ -102,6 +106,18 @@ for (let i = 0; i < projectItems.length; i++) {
 projectCloseBtn.addEventListener("click", projectsModalFunc);
 projectOverlay.addEventListener("click", projectsModalFunc);
 
+
+// Github link function
+function openGithubLink(link){
+  projectGithubLink.href = link;
+}
+
+// Make video source function
+function makeImgSrc(video_link){
+  projectResultVideos.src = video_link;
+}
+
+// ==============================================================================
 
 // custom select variables
 const select = document.querySelector("[data-select]");
