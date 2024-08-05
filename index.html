@@ -635,38 +635,59 @@
                     algorithms such as A* variants and D* lite. This motion planner was implemented on a simulation
                     environment built using ROS (Robotic Operating System) and Pygame. The system also includes a
                     time-priority-based conflict resolution strategy that allows for efficient navigation and safe
-                    operation of multiple AVs in a coordinated manner.
+                    operation of multiple AVs in a coordinated manner. The centralized controller provides a path for each AV
+                    to reach the destination, handles all deadlocks, and helps avoid collisions.
                   </p>
                   <!-- Overlay: Github Link -->
                   <div project-github-link hidden>https://github.com/RushiPDeshmukh/Centralized_Motion_Planner_Project
                   </div>
                   <!-- Overlay: Keywords -->
-                  <div project-keywords hidden>Motion Planning, Multi Robot Navigation</div>
+                  <div project-keywords hidden>ROS, Pygame, Multi Robot Navigation, Centralized Planning, Deadlock Resolution, Autonomous Vehicles</div>
                   <!-- Overlay: Results Text -->
                   <div project-result-text hidden>
-                    Result described here . Designed and deployed a centralized motion planning system for autonomous
-                    vehicles (AVs) using
-                    algorithms such as A* variants and D* lite. This motion planner was implemented on a simulation
+                    The centralized planner and localised planner approach of the project shows significant improvement in the handling of
+                    traffic planning for a city grid. Considering the Naive A* as baseline, a 29% performance improvement was observed for the Combinational Planner and a 26% performance improvement was observed for the Prioritized Safe Interval Planning.
                   </div>
                   <!-- Overlay: Videos + Caption -->
                   <div videos hidden>
-                    <div class="shadow-box column-flex">
-                      <iframe width="560" height="315"
-                        src="https://www.youtube.com/embed/-VVBiQ6VnZo?si=Abt6UgDhlBLLaWo5" title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                      <div class="video-caption">Caption
-                        1--------------------------------------------------------------------------------------------------------------------
+                    <div class="column-only">
+                      <div class="flex-only">
+                        <div class="shadow-box column-flex">
+                          <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/-VVBiQ6VnZo?si=Abt6UgDhlBLLaWo5" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                          <div class="video-caption">Caption
+                            1--------------------------------------------------------------------------------------------------------------------
+                          </div>
+                        </div>
+                        <div class="shadow-box column-flex">
+                          <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/-VVBiQ6VnZo?si=Abt6UgDhlBLLaWo5" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                          <div class="video-caption">Caption 2</div>
+                        </div>
                       </div>
-                    </div>
-                    <div class="shadow-box column-flex">
-                      <iframe width="560" height="315"
-                        src="https://www.youtube.com/embed/-VVBiQ6VnZo?si=Abt6UgDhlBLLaWo5" title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                      <div class="video-caption">Caption 2</div>
+                      <div class="flex-only">
+                        <div class="shadow-box column-flex">
+                          <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/-VVBiQ6VnZo?si=Abt6UgDhlBLLaWo5" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                          <div class="video-caption">Caption
+                            1--------------------------------------------------------------------------------------------------------------------
+                          </div>
+                        </div>
+                        <div class="shadow-box column-flex">
+                          <img width="560" height="315"
+                            src="./assets/images/centralized_motion_planner/centralized_motion_planner_result_graph.png" alt="Results graph">
+                          <div class="video-caption">Caption 2</div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
