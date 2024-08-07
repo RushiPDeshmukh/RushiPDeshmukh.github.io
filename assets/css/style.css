@@ -540,10 +540,15 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
+  margin-bottom: 40px;
 }
+.about .article-title { margin-bottom: 20px; }
 
-.about-text p { margin-bottom: 15px; }
-
+.about-text p{
+     text-align: justify;
+     text-justify: inter-word;
+     margin-bottom: 15px; 
+   }
 
 
 /**
@@ -1699,18 +1704,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 
-  /**
-   * #ABOUT
-   */
-
-  .about .article-title { margin-bottom: 20px; }
-
-  .about-text { margin-bottom: 40px; }
-
-  .about-text p{
-    text-align: justify;
-    text-justify: inter-word;
-  }
 
   /* service */
 
