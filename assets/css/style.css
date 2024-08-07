@@ -591,6 +591,8 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-3);
   line-height: 1.6;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 
@@ -1123,6 +1125,15 @@ main {
   object-fit: cover;
   transition: var(--transition-1);
   border-radius: 16px;
+
+}
+
+.blog-banner-box iframe{
+  position: relative;
+  border: none;
+  max-width: 100%;
+  border-radius: 14px;
+
 }
 
 .blog-post-item > a:hover .blog-banner-box img { transform: scale(1.1); }
@@ -1695,6 +1706,11 @@ textarea.form-input::-webkit-resizer { display: none; }
   .about .article-title { margin-bottom: 20px; }
 
   .about-text { margin-bottom: 40px; }
+
+  .about-text p{
+    text-align: justify;
+    text-justify: inter-word;
+  }
 
   /* service */
 
