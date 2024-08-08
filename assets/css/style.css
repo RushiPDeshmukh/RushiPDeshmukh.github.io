@@ -537,19 +537,26 @@ main {
 
 .about-text {
   color: var(--light-gray);
-  font-size: var(--fs-6);
-  font-weight: var(--fw-300);
   line-height: 1.6;
   margin-bottom: 40px;
 }
 .about .article-title { margin-bottom: 20px; }
 
 .about-text p{
-     text-align: justify;
-     text-justify: inter-word;
-     margin-bottom: 15px; 
-   }
+  font-size: var(--fs-16);
+  font-weight: var(--fw-300);
+  text-align: justify;
+  text-justify: inter-word;
+  margin-bottom: 15px; 
+  }
 
+.about-text .greeting{
+  font-weight: var(--fw-500);
+  font-size: var(--fs-18);
+  text-align: justify;
+  text-justify: inter-word;
+  margin-bottom: 15px; 
+}
 
 /**
  * #service 
