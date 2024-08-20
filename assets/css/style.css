@@ -607,6 +607,13 @@ main {
   text-justify: inter-word;
 }
 
+.service-item-text .dot {
+  background: var(--light-gray-70);
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+}
+
 
 /**
  * #testimonials 
