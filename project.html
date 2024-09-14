@@ -1,38 +1,40 @@
 <li class="project-item  active" data-filter-item data-category="reinforcement learning">
-    <div data-project-item>
-      <figure class="blog-banner-box">
-        <!-- Project GIF -->
-        <img src="./assets/images/BehaviourPlanning.gif"
-          alt="Intrinsic Curiosity  based RL on Pyramid Breaking Unity Environment" loading="lazy" project-img>
-      </figure>
+  <div data-project-item>
+    <figure class="blog-banner-box">
+      <!-- Project GIF -->
+      <img src="./assets/images/lanelet_mapping.gif"
+        alt="Lanelet Mapping using Semantic Segmentation and Depth Estimation" loading="lazy" project-img>
+    </figure>
 
-      <div class="blog-content">
-        <div class="blog-meta">
-          <!-- Project Category -->
-          <p class="blog-category" project-category>Reinforcement Learning</p>
-          <span class="dot"></span>
-          <!-- Project Date -->
-          <time datetime="2024-06" project-date>May 2024</time>
-        </div>
-        <!-- Project Title -->
-        <h3 class="h3 blog-item-title" project-title>Intrinsic Curiosity based RL on Pyramid Breaking Unity Environment</h3>
-        <!-- Project Description -->
-        <p class="blog-text" project-description hidden>
-            An agent in the pyramid breaking environment needs to learn to explore the entire arena for the button and then try to find the pyramid which is highlighted to break it. 
-            This project used Unity ML Agents Kit with PPO (Proximal Policy Optimization) to achieve 7 breaks in 2 minutes. Also, Random Network Distillation to encourage exploration was integrated to provide curiosity rewards based on novel discoveries and interactions.
-        </p>
-        <!-- Overlay: Github Link -->
-        <div project-github-link hidden>https://github.com/RushiPDeshmukh/
-        </div>
-        <!-- Overlay: Keywords -->
-        <div project-keywords hidden>Unity MLAgents, Self-Play, ELO score, </div>
-        <!-- Overlay: Results Text -->
-        <div project-result-text hidden>
-        blah blah blah    
-        </div>
-        <!-- Overlay: Videos + Caption -->
-        <div videos hidden>
-        </div>
+    <div class="blog-content">
+      <div class="blog-meta">
+        <!-- Project Category -->
+        <p class="blog-category" project-category>SLAM & Navigation</p>
+        <span class="dot"></span>
+        <!-- Project Date -->
+        <time datetime="2024-06" project-date>Jan 2023</time>
+      </div>
+      <!-- Project Title -->
+      <h3 class="h3 blog-item-title" project-title>Lanelet Mapping using Semantic Segmentation and Depth Estimation</h3>
+      <!-- Project Description -->
+      <p class="blog-text" project-description hidden>
+          Developed a robust lane detection algorithm using Semantic Segmentation for extracting drivable surfaces along with edge detectors and line estimators. 
+          Edges extracted using Canny edge detector were passed to a Hough line estimator and filtered using slope heuristics to get lane markings in the dataset.
+          Designed a ROS2 architecture to map a City Grid into Lanelet maps for Behavioral planning.
+      </p>
+      <!-- Overlay: Github Link -->
+      <div project-github-link hidden>https://github.com/RushiPDeshmukh/
+      </div>
+      <!-- Overlay: Keywords -->
+      <div project-keywords hidden>Semantic Segmentation, Depth Maps, Canny Edge Detector, Hough Line Estimator</div>
+      <!-- Overlay: Results Text -->
+      <div project-result-text hidden>
+      Successfully extracted driving surfaces and detected lanes for an autonomous vehicle to allow navigation and behavior planning. 
+      Lane detection was done using classical computer vision techniques allowing for low computational complexity as compared to Deep learning apporaches. 
+      </div>
+      <!-- Overlay: Videos + Caption -->
+      <div videos hidden>
       </div>
     </div>
-  </li>
+  </div>
+</li>

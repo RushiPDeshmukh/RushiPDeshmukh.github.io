@@ -647,14 +647,23 @@
                   <h3 class="h3 blog-item-title" project-title>Intrinsic Curiosity based RL on Pyramid Breaking Unity
                     Environment</h3>
                   <!-- Project Description -->
+                  <p class="blog-text" project-description hidden>The Pyramid Breaking environment in Unity challenges
+                    an agent to explore a vast arena, locate a hidden button, and then find and destroy a highlighted
+                    pyramid. The environment's sparse reward structure makes exploration difficult, necessitating more
+                    advanced reinforcement learning techniques to solve it efficiently.
 
-    
+                    This project utilized the Unity ML-Agents Toolkit with Proximal Policy Optimization (PPO) as the
+                    primary learning algorithm. The agent was trained to break 7 pyramids within a 2-minute window. To
+                    address the exploration problem, Random Network Distillation (RND) was integrated into the system.
+                    RND provides curiosity-based rewards, encouraging the agent to explore novel parts of the
+                    environment, discover new objects, and interact with them in creative ways. This approach is
+                    particularly useful in sparse-reward settings where traditional algorithms may struggle to converge
+                    on optimal policies.
 
-                    <p class="blog-text" project-description hidden>The Pyramid Breaking environment in Unity challenges an agent to explore a vast arena, locate a hidden button, and then find and destroy a highlighted pyramid. The environment's sparse reward structure makes exploration difficult, necessitating more advanced reinforcement learning techniques to solve it efficiently.
-
-                      This project utilized the Unity ML-Agents Toolkit with Proximal Policy Optimization (PPO) as the primary learning algorithm. The agent was trained to break 7 pyramids within a 2-minute window. To address the exploration problem, Random Network Distillation (RND) was integrated into the system. RND provides curiosity-based rewards, encouraging the agent to explore novel parts of the environment, discover new objects, and interact with them in creative ways. This approach is particularly useful in sparse-reward settings where traditional algorithms may struggle to converge on optimal policies.
-                      
-                      The agent's ability to break pyramids is directly tied to its understanding of the environment, requiring a balance of exploration and exploitation. RND's intrinsic reward mechanism helped the agent build a comprehensive understanding of the state space, facilitating a faster convergence during training.
+                    The agent's ability to break pyramids is directly tied to its understanding of the environment,
+                    requiring a balance of exploration and exploitation. RND's intrinsic reward mechanism helped the
+                    agent build a comprehensive understanding of the state space, facilitating a faster convergence
+                    during training.
                   </p>
                   <!-- Overlay: Github Link -->
                   <div project-github-link hidden>https://github.com/RushiPDeshmukh/
@@ -663,7 +672,9 @@
                   <div project-keywords hidden>Unity MLAgents, PPO, Random Network Distillation </div>
                   <!-- Overlay: Results Text -->
                   <div project-result-text hidden>
-                    By incorporating RND for intrinsic curiosity rewards, the agent achieved 98% training accuracy, leading to thorough exploration of the state space and significantly improved performance in navigating and solving the environment's challenges.
+                    By incorporating RND for intrinsic curiosity rewards, the agent achieved 98% training accuracy,
+                    leading to thorough exploration of the state space and significantly improved performance in
+                    navigating and solving the environment's challenges.
                   </div>
                   <!-- Overlay: Videos + Caption -->
                   <div videos hidden>
@@ -824,6 +835,47 @@
                 </div>
               </div>
             </li>
+
+            <li class="project-item  active" data-filter-item data-category="slam & navigation">
+              <div data-project-item>
+                <figure class="blog-banner-box">
+                  <!-- Project GIF -->
+                  <img src="./assets/images/lanelet_mapping.gif"
+                    alt="Lanelet Mapping using Semantic Segmentation and Depth Estimation" loading="lazy" project-img>
+                </figure>
+          
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <!-- Project Category -->
+                    <p class="blog-category" project-category>SLAM & Navigation</p>
+                    <span class="dot"></span>
+                    <!-- Project Date -->
+                    <time datetime="2024-06" project-date>Jan 2023</time>
+                  </div>
+                  <!-- Project Title -->
+                  <h3 class="h3 blog-item-title" project-title>Lanelet Mapping using Semantic Segmentation and Depth Estimation</h3>
+                  <!-- Project Description -->
+                  <p class="blog-text" project-description hidden>
+                      Developed a robust lane detection algorithm using Semantic Segmentation for extracting drivable surfaces along with edge detectors and line estimators. 
+                      Edges extracted using Canny edge detector were passed to a Hough line estimator and filtered using slope heuristics to get lane markings in the dataset.
+                      Designed a ROS2 architecture to map a City Grid into Lanelet maps for Behavioral planning.
+                  </p>
+                  <!-- Overlay: Github Link -->
+                  <div project-github-link hidden>https://github.com/RushiPDeshmukh/
+                  </div>
+                  <!-- Overlay: Keywords -->
+                  <div project-keywords hidden>Semantic Segmentation, Depth Maps, Canny Edge Detector, Hough Line Estimator</div>
+                  <!-- Overlay: Results Text -->
+                  <div project-result-text hidden>
+                  Successfully extracted driving surfaces and detected lanes for an autonomous vehicle to allow navigation and behavior planning. 
+                  Lane detection was done using classical computer vision techniques allowing for low computational complexity as compared to Deep learning approaches. 
+                  </div>
+                  <!-- Overlay: Videos + Caption -->
+                  <div videos hidden>
+                  </div>
+                </div>
+              </div>
+            </li>          
 
             <li class="project-item  active" data-filter-item data-category="slam & navigation">
               <div data-project-item>
