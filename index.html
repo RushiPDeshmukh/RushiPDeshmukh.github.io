@@ -167,7 +167,9 @@
             <button class="navbar-link" data-nav-link>Projects</button>
           </li>
 
-
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blogs</button>
+          </li>
 
           <!-- <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Github Repositories</button>
@@ -199,8 +201,8 @@
             low-level software and hardware, focusing on sensors and actuators.
             During my undergraduate degree, I led a project to develop a bionic
             arm controlled by EMG signals for lower arm amputees, an initiative funded by the Dassault Foundations.
-            During my MS, I furthered my research into robotic arms with reinforcement learning (RL) control and
-            automation, exploring how these technologies can transform robotic capabilities.
+            I furthered my research into robotic arms with reinforcement learning (RL) control and
+            automation as a Research Fellow at Worcester Polytechnic Institute, exploring how Deep Learning can transform robotic capabilities.
             Currently, I am dedicated to optimizing the glass recycling process using robot vision and RL in my
             professional role.
             <br>
@@ -365,9 +367,8 @@
               <h4 class="h4 timeline-item-title">Lead AI Engineer, Lumasort</h4>
               <span>Feb 2023 — Present</span>
               <p class="timeline-text">
-                Improved performance of a vision-based glass sorting robot with RL control strategy to 96% accuracy
-                compared to conventional IR-based and physics-guided systems’s 78%.
-                Designed a custom robotic simulation environment using ROS2 and Gazebo, for seamless hardware
+                Designed and trained reinforcement learning agents for a vision-based glass sorting robot to achieve 96% accuracy
+                on a custom robotic simulation environment made using ROS2 and Gazebo. Tuned agents for seamless hardware
                 integration and established AWS instance clusters for scalable training using ZMQ infrastructure.
                 Utilized TRPO (Trust Region Policy Optimization) and PPO (Proximal Policy Optimization) algorithms with
                 intrinsic curiosity rewards to train agents in solving partially observable MDPs, while exploring
@@ -380,21 +381,9 @@
               <span>May 2023 — Present (Part Time)</span>
               <p class="timeline-text">
                 Overseeing testing and development of new features for CPAP device. Designed production-grade
-                software stack, currently undergoing FDA Approval. Addressed safety critical issues by
+                software stack for the biomedical device, currently undergoing FDA Approval. Addressed safety critical issues by
                 integrating multiple sensor stacks with monitoring systems and iteratively designed custom PCBs to
                 optimize performance and meet biomedical device requirements.
-              </p>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Embedded Systems Lead Developer, Therapeutic Innovations</h4>
-              <span>Aug 2022 — May 2023</span>
-              <p class="timeline-text">
-                As a Software Team Lead, I was responsible for overseeing the development of libraries for biomedical
-                devices. My role involved utilizing my expertise in programming languages such as C++, Embedded C, and
-                RTOS to create user-friendly libraries that make it easy to work with biomedical devices. Additionally,
-                I drew upon my knowledge of hardware to ensure that the libraries the team create are optimized for use
-                with a wide range of biomedical devices.
               </p>
             </li>
 
@@ -403,12 +392,12 @@
                 Robotics (MER) Lab</h4>
               <span>Jan 2022 — Sept 2022</span>
               <p class="timeline-text">
-                I have successfully conducted research and developed various reinforcement learning (RL) agents to
+                Developed various reinforcement learning (RL) agents to
                 generate motion plans and control strategies for panda robots with variable friction grips on custom
                 OpenAI gym environments and hardware. Through the use of Q learning, Deep Q learning, Policy Gradient
                 (PPO), and Parameterized DQN models, I was able to decrease the hybrid action space by 50% and implement
-                six discreet meta actions control strategies. My work has led to successful testing of these models on
-                the robots.
+                six discreet meta actions control strategies. These improvements were successfully testing on
+                the Panda robots.
               </p>
             </li>
 
@@ -416,8 +405,8 @@
               <h4 class="h4 timeline-item-title">Technical Supervisor, Product Innovations Lab</h4>
               <span> Aug 2017 — Aug 2019</span>
               <p class="timeline-text">
-                As a technical supervisor for logistics for Dassault Systems-sponsored projects for two years, I was
-                responsible for developing a communication channel between Dassault Systems members and the college,
+                As a technical supervisor for Dassault Systems-sponsored projects, I was
+                responsible for maintaining a communication channel between Dassault Systems members and my institute,
                 securing sponsorship for 4 projects, conducting interviews and selecting 25 members for PILab,
                 organizing and leading Raspberry Pi and Arduino Bootcamp sessions for 250 undergraduate engineering
                 students, and helping host and deploy 3 Virtual Labs on the MHRD website.
@@ -513,6 +502,15 @@
               </div>
 
             </li>
+
+            <!-- <div class="title-wrapper">
+              <div class="timeline-text">
+                Python , C++ , MATLAB , Embedded C , Java , TensorFlow , Pytorch , Keras , PCL
+                Sci-Kit Learn , Pandas , OpenAI Gym , OMPL ,  , ROS 1 & 2, Gazebo, OpenCV, Solidworks, Linux, Git, JIRA, 3D Experience platform,
+                Arduino, RaspberryPi, Dockers, IMUs, GPS modules, Stereo Vision Camera, Various Actuators and Communication Protocols like SPI, I2C, URscripts
+              </div>
+            </div> -->
+
             <!-- <div class="separator"></div>
 
         <ul class="social-list">
@@ -1280,192 +1278,41 @@
         <!-- ============================================================================================================================== -->
       </article>
 
-      <!-- 
-      BLOGSSSSS
-      <article class="blog" data-page="blog">
+      <!--       
+          Blogs
+      -->
+      <article class="blogs" data-page="blogs">
 
         <header>
-          <h2 class="h2 article-title">Blog</h2>
+          <h2 class="h2 article-title">Blogs</h2>
         </header>
 
-        <section class="blog-posts">
+        <section class="projects">
 
           <ul class="blog-posts-list">
 
-            <li class="blog-post-item">
-              <a href="#">
-
+            <li class="project-item active">
+              <a href="https://medium.com/@rushideshmukh23/visual-odometry-a-practical-guide-71ddff1687cd">
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                  <img src="./assets/images/VIO_fast_output.gif" alt="Visual Odometry: A practical guide" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
-
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
+                    <p class="blog-category">Robotics</p>
                     <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-02-23">Sept 8, 2024</time>
                   </div>
-
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
-
+                  <h3 class="h3 blog-item-title">Visual Odometry: A practical guide</h3>
                 </div>
-
               </a>
             </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
           </ul>
 
         </section>
 
       </article>
- -->
+
 
     </div>
 
